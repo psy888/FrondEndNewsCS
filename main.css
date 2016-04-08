@@ -42,6 +42,7 @@ li {
 
  a {
  	color: rgb(255,64,129);
+ 	transition: 0.2s ease-in-out;
  }
  a:active, a:hover, a:focus {
  	color: rgb(33,33,33);
@@ -107,6 +108,44 @@ li {
 .is-liked {
 	animation: flash 2s;
 }
+
+
+
+ /*----------------------------------------------
+*		FORM
+------------------------------------------------*/
+
+.form {
+	height: 0;
+	margin-bottom: 20px;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.form.is-visible {
+	height: auto;
+	opacity: 1;
+	visibility: visible;
+	transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+}
+
+.form-label{
+	display: block;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.form-input{
+	border: 1px solid rgb(182,182,182);
+	border-radius: 4px;
+	box-sizing: border-box;
+	font-size: 20px;
+	padding: 10px;
+	width: 100%;
+}
+
+
+
 
  /*----------------------------------------------
 *		Animation
