@@ -172,6 +172,13 @@ li {
 	top: 40px;
 	transform: translate(-50%, 0);
 	z-index: 2;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.5s, visibility 0.5s;
+}
+.modal.is-visible {
+	visibility: visible;
+	opacity: 1;
 }
 
 .modal-media{
@@ -192,7 +199,8 @@ li {
  
  .modal-overlay {
  	background-color: rgb(33,33,33);
- 	opacity: 0.4;
+ 	opacity: 0;
+ 	visibility: hidden;
  	top: 0;
  	left: 0;
  	right: 0;
@@ -201,6 +209,12 @@ li {
  	height: 100%;
  	position: fixed;
  	z-index: 1;
+ 	transition: opacity 0.3s, visibility 0.5s;
+ }
+
+ .modal-overlay.is-visible {
+ 	opacity: 0.4;
+ 	visibility: visible;
 
  }
 
