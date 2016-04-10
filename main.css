@@ -121,7 +121,7 @@ li {
 ------------------------------------------------*/
 
 .is-liked {
-	animation: flash 2s;
+	animation: flash 1s;
 }
 
 
